@@ -1,0 +1,64 @@
+.site-layout-background {
+    width: auto;
+    height: 85vh;
+}
+
+
+.cards__style {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    border: 1px solid #efefef;
+    border-radius: 5px;
+    background-color: #8FD14F;
+    width: 250px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.card__cadastro {
+    border: 1px solid #efefef;
+    border-radius: 5px;
+    background-color: #2D9BF0;
+    width: 250px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.cards__style p {
+    color: white;
+    margin-top: 0;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.card__cadastro a {
+    color: white;
+    margin-top: 0;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.card:hover {
+    border: 4px solid #80ba46;
+    transition: all 0.1s ease-in-out;
+}
+
+.card__cadastro:hover {
+    border: 4px solid #2D9BF0;
+    transition: all 0.1s ease-in-out;
+}

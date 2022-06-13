@@ -1,0 +1,32 @@
+.site-layout .site-layout-background {
+    background: #fff;
+}
+
+[data-theme="dark"] .site-layout .site-layout-background {
+    background: #141414;
+}
+
+.logo {
+    border: 4px solid dodgerblue;
+    padding: 9px;
+    color: dodgerblue;
+    text-decoration: none;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10vh;
+    margin-left: 2vh;
+}
+
+.Position__logo {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.site-layout-background {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
