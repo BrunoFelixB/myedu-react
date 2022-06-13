@@ -65,9 +65,7 @@ form input[type="submit"] {
     text-transform: uppercase;
     font-weight: 700;
     cursor: pointer;
-    width: 40%;
-    /* position: relative;
-    left: 60%; */
+    width: 100%;
 }
 
 form input[type="submit"]:hover {

@@ -1,19 +1,26 @@
 import './Login.css';
 import { useState, useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 import { AuthContext } from '../contexts/auth';
 
 export function Login() {
 
-    const {authenticated, login} = useContext(AuthContext);
+    const navigate = useNavigate();
+
+    const {login} = useContext(AuthContext);
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
     const manipulateLogin = (e) => {
         e.preventDefault();
-        console.log("submit",{email, password});
         login(email, password); 
+    }
+
+    const recuperar = (e) => {
+        e.preventDefault();
+        navigate("/recuperar");
     }
 
     return (
@@ -43,7 +50,7 @@ export function Login() {
                         onChange={(e) => setPassword (e.target.value)}
                         />
 
-                        <a href="/#">Não consegue acessar sua conta?</a>
+                        <a href="/recuperar" onSubmit={recuperar}> Não consegue acessar sua conta? </a>
 
                         <input type="submit" value="Entrar" required />
 

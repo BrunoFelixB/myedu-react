@@ -1,4 +1,4 @@
-import { useState, useContext } from 'react';
+import { useContext } from 'react';
 
 import {
     BrowserRouter as Router,
@@ -10,6 +10,7 @@ import {
 import { Login } from "./pages/Login/Login";
 import { Dashboard } from "./pages/Dashboard/Dashboard";
 import { DashboardCadastro } from './pages/DashboardCadastro';
+import { RecuperaSenha } from './pages/RecuperarSenha';
 
 import { AuthProvider, AuthContext } from './pages/contexts/auth';
 
@@ -38,6 +39,7 @@ const AppRoutes = () => {
             <AuthProvider>
                 <Routes>
                     <Route path="/login" element={<Login />} />
+                    <Route path="/recuperar" element={<RecuperaSenha />} />
                     <Route
                         path="/dashboard"
                         element={
