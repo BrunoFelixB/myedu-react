@@ -49,7 +49,7 @@ export const AuthProvider = ({children}) => {
     const logout = () => {
         console.log("logout");
         setUser(null);
-        navigate("/login");
+        navigate("/");
         localStorage.removeItem("user");
         localStorage.removeItem("token");
         api.defaults.headers.Authorization = null;

@@ -1,5 +1,4 @@
 import './RecuperaSenha.css';
-import { useState, useContext } from 'react';
 import { ArrowLeftOutlined } from '@ant-design/icons';
 
 import { useNavigate } from "react-router-dom";
@@ -10,7 +9,7 @@ export function RecuperaSenha() {
 
     const voltar = (e) => {
         e.preventDefault();
-        navigate("/login");
+        navigate("/");
     }
 
     return (

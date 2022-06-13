@@ -26,7 +26,7 @@ const AppRoutes = () => {
 
         if (!authenticated) {
             
-            return <Navigate to="/login" />;
+            return <Navigate to="/" />;
         }
 
         return children;
@@ -38,7 +38,7 @@ const AppRoutes = () => {
         <Router>
             <AuthProvider>
                 <Routes>
-                    <Route path="/login" element={<Login />} />
+                    <Route path="/" element={<Login />} />
                     <Route path="/recuperar" element={<RecuperaSenha />} />
                     <Route
                         path="/dashboard"

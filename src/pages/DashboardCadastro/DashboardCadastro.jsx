@@ -5,7 +5,6 @@ import { Cadastro } from '../Componentes/Cadastro/Cadastro';
 import { AuthContext } from '../contexts/auth';
 import React, { useContext } from 'react';
 import { useNavigate } from "react-router-dom";
-import { ArrowLeftOutlined } from '@ant-design/icons';
 
 const { Header, Content, Footer } = Layout;
 
@@ -14,8 +13,8 @@ export function DashboardCadastro() {
     const navigate = useNavigate();
 
     const { logout } = useContext(AuthContext);
-    
-    const irInicio= (e) => {
+
+    const irInicio = (e) => {
         e.preventDefault();
         navigate("/dashboard");
     }
@@ -35,7 +34,7 @@ export function DashboardCadastro() {
                 }}
             >
                 <div className='Position__logo'>
-                    <a className="logo" href="/#">MyEdu</a>
+                    <a className="logo" href="/#" onClick={irInicio}>MyEdu</a>
                 </div>
 
                 <Menu
