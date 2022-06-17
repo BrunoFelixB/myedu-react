@@ -1,11 +1,11 @@
 
-# Site do projeto MyEdu para o Bootcamp Tera - Em React
+# Site do projeto MyEdu para o Bootcamp Tera - Em React.Js
 
 <p align="left">
 <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
 </p>
 
-## Sobre o projeto
+## Sobre o projeto 
 
 Foi criado uma página de login do Administrador.
 
