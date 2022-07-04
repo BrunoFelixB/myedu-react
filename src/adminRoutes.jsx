@@ -7,14 +7,14 @@ import {
     Navigate
 } from 'react-router-dom';
 
-import { Login } from "./pages/Login/Login";
-import { Dashboard } from "./pages/Dashboard/Dashboard";
-import { DashboardCadastro } from './pages/DashboardCadastro';
-import { RecuperaSenha } from './pages/RecuperarSenha';
+import { Login } from "./admin/pages/Login/Login";
+import { Dashboard } from "./admin/pages/Dashboard/Dashboard";
+import { DashboardCadastro } from './admin/pages/DashboardCadastro';
+import { RecuperaSenha } from './admin/pages/RecuperarSenha';
 
-import { AuthProvider, AuthContext } from './pages/contexts/auth';
+import { AuthProvider, AuthContext } from './contexts/authAdmin';
 
-const AppRoutes = () => {
+const AdminRoutes = () => {
 
     const Private = ({ children }) => {
 
@@ -62,4 +62,4 @@ const AppRoutes = () => {
     )
 } 
 
-export default AppRoutes;
+export default AdminRoutes;

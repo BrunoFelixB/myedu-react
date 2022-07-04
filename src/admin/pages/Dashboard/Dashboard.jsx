@@ -1,8 +1,8 @@
 import './Dashboard.css';
 import 'antd/dist/antd.css';
 import { Breadcrumb, Layout, Menu } from 'antd';
-import { Cards } from "../Componentes/Cards/Cards";
-import { AuthContext } from '../contexts/auth';
+import { Cards } from "../../Componentes/Cards/Cards";
+import { AuthContext } from '../../../contexts/authAdmin';
 import React, { useContext } from 'react';
 
 import { useNavigate } from "react-router-dom";

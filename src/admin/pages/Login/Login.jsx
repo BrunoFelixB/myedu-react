@@ -1,7 +1,7 @@
 import './Login.css';
 import { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { AuthContext } from '../contexts/auth';
+import { AuthContext } from '../../../contexts/authAdmin';
 import {message} from 'antd';
 
 export function Login() {

@@ -1,11 +1,11 @@
 import axios from "axios";
 
 export const api = axios.create({
-    baseURL: "http://localhost:8080",
+    baseURL: "https://api-myedu.herokuapp.com/",
 });
 
 export const createSession = async (email, password) => {
-    return api.post("/users/login", {
+    return api.post("/admin/login", {
         email,
         password,
     });

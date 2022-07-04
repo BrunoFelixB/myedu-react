@@ -1,10 +1,10 @@
 import React from "react";
-import AppRoutes from "./appRoutes";
+import AdminRoutes from "./adminRoutes";
 
 function App() {
   return (
     <React.Fragment>
-      <AppRoutes />
+      <AdminRoutes />
     </React.Fragment>
   );
 }
