@@ -1,23 +1,24 @@
-import './DashboardCadastro.css';
+import './Dashboard.css';
 import 'antd/dist/antd.css';
 import { Breadcrumb, Layout, Menu } from 'antd';
-import { Cadastro } from '../../Componentes/Cadastro/Cadastro';
+import { Cards } from "../../../Componentes/Cards/Cards";
 import { AuthContext } from '../../../contexts/authAdmin';
 import React, { useContext } from 'react';
+
 import { useNavigate } from "react-router-dom";
 
 const { Header, Content, Footer } = Layout;
 
-export function DashboardCadastro() {
+export function Dashboard() {
 
     const navigate = useNavigate();
 
-    const { logout } = useContext(AuthContext);
-
-    const irInicio = (e) => {
+    const irInicio= (e) => {
         e.preventDefault();
         navigate("/dashboard");
     }
+
+    const { logout } = useContext(AuthContext);
 
     const logoutUser = (e) => {
         e.preventDefault();
@@ -44,10 +45,10 @@ export function DashboardCadastro() {
                     style={{ lineHeight: '64px' }}
                 >
                     <Menu.Item key="1">
-                        <a href="/dashboard" onClick={irInicio}>Cadastro</a>
+                        <a href="/#/" onClick={irInicio}>Cadastro</a>
                     </Menu.Item>
                     <Menu.Item key="2">
-                        <a href="/dashboard">Configurações</a>
+                        <a href="/#/Dashboard">Configurações</a>
                     </Menu.Item>
                     <Menu.Item key="3">
                         <a href="/login" onClick={logoutUser}>Sair</a>
@@ -66,7 +67,7 @@ export function DashboardCadastro() {
                     }}
                 >
                 </Breadcrumb>
-                <Cadastro />
+                <Cards />
             </Content>
             <Footer
                 style={{

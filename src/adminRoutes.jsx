@@ -7,10 +7,10 @@ import {
     Navigate
 } from 'react-router-dom';
 
-import { Login } from "./admin/pages/Login/Login";
-import { Dashboard } from "./admin/pages/Dashboard/Dashboard";
-import { DashboardCadastro } from './admin/pages/DashboardCadastro';
-import { RecuperaSenha } from './admin/pages/RecuperarSenha';
+import { Login } from "./pages/admin/Login/Login";
+import { Dashboard } from "./pages/admin/Dashboard/Dashboard";
+import { DashboardCadastro } from './pages/admin/DashboardCadastro';
+import { RecuperaSenha } from './pages/admin/RecuperarSenha';
 
 import { AuthProvider, AuthContext } from './contexts/authAdmin';
 
